@@ -1,0 +1,18 @@
+version: "3.8"
+services: 
+  api:
+    build: ./api_marhaba_livraison
+    container_name: api_marhaba_c
+    ports:
+      - '8080:8080'
+    volumes:
+    
+      - ./api_marhaba_livraison:/server
+      - ./api_marhaba_livraison:/node_modules
+  frontend:
+    build: ./marhaba_app_front
+    container_name: front_marhaba_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    tty: true

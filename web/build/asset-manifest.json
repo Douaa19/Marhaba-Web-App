@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e7720ab7.css",
+    "main.js": "/static/js/main.16bf6563.js",
+    "static/media/burger.jpg": "/static/media/burger.cc124ab95ea849517164.jpg",
+    "static/media/opacity-logo.png": "/static/media/opacity-logo.c862c664cc8299e54fcd.png",
+    "static/media/marhaba-delivery.png": "/static/media/marhaba-delivery.8e4ad8304cf525442b97.png",
+    "index.html": "/index.html",
+    "main.e7720ab7.css.map": "/static/css/main.e7720ab7.css.map",
+    "main.16bf6563.js.map": "/static/js/main.16bf6563.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e7720ab7.css",
+    "static/js/main.16bf6563.js"
+  ]
+}

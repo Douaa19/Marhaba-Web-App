@@ -1,0 +1,2 @@
+web: cd marhaba_app_front && npm i && npm start
+server: cd api_marhaba_livraison && npm i && npm start

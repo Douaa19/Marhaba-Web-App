@@ -5,7 +5,7 @@ const APP_URL = "http://localhost:8080";
 
 export function login(email, password) {
   return axios
-    .post(`http://localhost:4000/login`, {
+    .post(`http://localhost:8080/auth/login`, {
       email,
       password,
     })

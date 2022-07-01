@@ -1,14 +1,14 @@
 version: "3.8"
 services: 
   api:
-    build: ./api_marhaba_livraison
-    container_name: api_marhaba_c
+    build: ./api_marhaba_app
+    container_name: marhaba-web-app_api
     ports:
       - '8080:8080'
     volumes:
     
-      - ./api_marhaba_livraison:/server
-      - ./api_marhaba_livraison:/node_modules
+      - ./api_marhaba_app:/server
+      - ./api_marhaba_app:/node_modules
   frontend:
     build: ./marhaba_app_front
     container_name: front_marhaba_c

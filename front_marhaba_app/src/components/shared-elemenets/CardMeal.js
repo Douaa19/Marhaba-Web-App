@@ -24,12 +24,14 @@ function CardMeal() {
     (async () => {
       axios
         .get(`${MEAL_URL}`, {
-          headers: { Authorization: `Bearer ${header}` },
+          headers: {
+            Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNDQ5MjNkYTgwMThmYTE2ZmJiNzI3NSIsInJvbGUiOnsibmFtZSI6ImFkbWluIiwiX2lkIjoiNjI0NDkyM2RhODAxOGZhMTZmYmI3Mjc2In0sInVzZXJuYW1lIjoiTW9oaGFtZWQiLCJpYXQiOjE2NDk0MTk5MDl9.0N2dFXbrMvoj5oCabBc6DxtW0zs8njqNj5ejabKHi0U`,
+          },
         })
         .then((res) => {
           if (res) {
             setMeals(res.data);
-            // console.log(res.data);
+            console.log(res.data);
             setPanding(false);
           }
         })
@@ -61,11 +63,12 @@ function CardMeal() {
                     <CardBody>
                       <CardTitle tag="h5">{meal.title}</CardTitle>
                       <CardSubtitle className="mb-2 text-muted" tag="h6">
-                        {meal.price}.00 DH
+                        {/* {meal.price} */}
+                        .00 DH
                       </CardSubtitle>
                       <CardText>{meal.description}</CardText>
-                      {/* <Button onClick={() => changePath(meal._id)}> */}
-                      {/* Order
+                      {/* <Button onClick={() => changePath(meal._id)}>
+          {/* Order
                       </Button> */}
                     </CardBody>
                   </Card>

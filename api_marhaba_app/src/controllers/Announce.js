@@ -34,6 +34,7 @@ const getAnnounces = async (req, res) => {
       res.status(400).json({ message: "No announces found" });
     }
     res.status(200).json(annons);
+    // console.log(annons);
   } catch (error) {
     res.json(error);
   }
